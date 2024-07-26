@@ -1,0 +1,13 @@
+main.py:
+
+from os import name import preprocess as pre
+ 
+
+
+Skill-02
+ 
+# Press the green button in the gutter to run the script. if    name	== ' main ':
+images_folder_path = 'train' imdata = pre.preprocess_data()
+imdata.visualize_images(images_folder_path, 2)
+image_df, train, label = imdata.preprocess(images_folder_path) image_df.to_csv("output_df.csv")
+
